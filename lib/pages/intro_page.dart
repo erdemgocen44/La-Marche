@@ -12,6 +12,14 @@ class IntroPage extends StatefulWidget {
 class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Image.asset(
+            'assets/images/avocat.png',
+          ),
+        ],
+      ),
+    );
   }
 }
