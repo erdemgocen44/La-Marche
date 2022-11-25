@@ -18,13 +18,28 @@ class _IntroPageState extends State<IntroPage> {
           Center(
             child: Padding(
               padding: const EdgeInsets.only(
-                top: 100,
+                top: 160,
+                left: 80,
+                right: 80,
+                bottom: 80,
               ),
               child: Image.asset(
                 'assets/images/avocat.png',
+                fit: BoxFit.fill,
               ),
             ),
           ),
+          const Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Text(
+              "Nous livrons l'épicerie à votre porte",
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          )
         ],
       ),
     );
