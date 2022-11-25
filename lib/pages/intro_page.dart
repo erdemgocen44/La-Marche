@@ -48,6 +48,12 @@ class _IntroPageState extends State<IntroPage> {
               padding: EdgeInsets.all(25),
               child: Text(
                 'Commencer!!',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
           ),
