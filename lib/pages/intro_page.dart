@@ -38,7 +38,13 @@ class _IntroPageState extends State<IntroPage> {
               ),
               textAlign: TextAlign.center,
             ),
-          ),const Text('Produits frais tous les jours'),Container(decoration: ,),
+          ),
+          const Text('Produits frais tous les jours'),
+          Container(
+            decoration: const BoxDecoration(
+              color: Colors.deepPurple,
+            ),
+          ),
         ],
       ),
     );
