@@ -15,8 +15,15 @@ class _IntroPageState extends State<IntroPage> {
     return Scaffold(
       body: Column(
         children: [
-          Image.asset(
-            'assets/images/avocat.png',
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.only(
+                top: 100,
+              ),
+              child: Image.asset(
+                'assets/images/avocat.png',
+              ),
+            ),
           ),
         ],
       ),
