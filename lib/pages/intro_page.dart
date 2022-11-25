@@ -44,6 +44,12 @@ class _IntroPageState extends State<IntroPage> {
             decoration: const BoxDecoration(
               color: Colors.deepPurple,
             ),
+            child: const Padding(
+              padding: EdgeInsets.all(25),
+              child: Text(
+                'Commencer!!',
+              ),
+            ),
           ),
         ],
       ),
