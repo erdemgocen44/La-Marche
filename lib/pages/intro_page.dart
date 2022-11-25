@@ -21,11 +21,10 @@ class _IntroPageState extends State<IntroPage> {
                 top: 160,
                 left: 80,
                 right: 80,
-                bottom: 80,
+                bottom: 40,
               ),
               child: Image.asset(
                 'assets/images/avocat.png',
-                fit: BoxFit.fill,
               ),
             ),
           ),
@@ -39,7 +38,7 @@ class _IntroPageState extends State<IntroPage> {
               ),
               textAlign: TextAlign.center,
             ),
-          )
+          ),const Text('Produits frais tous les jours'),Container(decoration: ,),
         ],
       ),
     );
