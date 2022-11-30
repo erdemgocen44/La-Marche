@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class IntroPage extends StatefulWidget {
   const IntroPage({Key? key}) : super(key: key);
@@ -28,14 +29,11 @@ class _IntroPageState extends State<IntroPage> {
               ),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.all(20.0),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
             child: Text(
               "Nous livrons l'épicerie à votre porte",
-              style: TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-              ),
+              style: GoogleFonts.notoSerif(),
               textAlign: TextAlign.center,
             ),
           ),
@@ -58,6 +56,7 @@ class _IntroPageState extends State<IntroPage> {
               ),
             ),
           ),
+          const Spacer(),
         ],
       ),
     );
