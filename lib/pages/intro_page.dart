@@ -40,11 +40,10 @@ class _IntroPageState extends State<IntroPage> {
               textAlign: TextAlign.center,
             ),
           ),
-          const Text(
+          Text(
             'Produits frais tous les jours',
             style: TextStyle(
-              fontSize: 20,
-              color: Colors.grey,
+              color: Colors.grey[600],
             ),
           ),
           const Spacer(),
