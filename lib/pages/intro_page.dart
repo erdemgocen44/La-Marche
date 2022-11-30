@@ -40,6 +40,9 @@ class _IntroPageState extends State<IntroPage> {
               textAlign: TextAlign.center,
             ),
           ),
+          SizedBox(
+            height: 24,
+          ),
           Text(
             'Produits frais tous les jours',
             style: TextStyle(
