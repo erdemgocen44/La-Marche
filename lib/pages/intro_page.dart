@@ -40,6 +40,7 @@ class _IntroPageState extends State<IntroPage> {
             ),
           ),
           const Text('Produits frais tous les jours'),
+          const Spacer(),
           Container(
             decoration: const BoxDecoration(
               color: Colors.deepPurple,
