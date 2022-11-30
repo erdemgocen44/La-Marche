@@ -33,7 +33,7 @@ class _IntroPageState extends State<IntroPage> {
             padding: const EdgeInsets.all(20.0),
             child: Text(
               "Nous livrons l'épicerie à votre porte",
-              style: GoogleFonts.notoSerif(),
+              style: GoogleFonts.nerkoOne(),
               textAlign: TextAlign.center,
             ),
           ),
