@@ -40,7 +40,7 @@ class _IntroPageState extends State<IntroPage> {
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
           Text(
@@ -50,20 +50,22 @@ class _IntroPageState extends State<IntroPage> {
             ),
           ),
           const Spacer(),
-          Container(
-            decoration: const BoxDecoration(
-              color: Colors.deepPurple,
-            ),
-            child: const Padding(
-              padding: EdgeInsets.all(25),
-              child: Text(
-                'Commencer!!',
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+          GestureDetector(
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Colors.deepPurple,
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(25),
+                child: Text(
+                  'Commencer!!',
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
               ),
             ),
           ),
