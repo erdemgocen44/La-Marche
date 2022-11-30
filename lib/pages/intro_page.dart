@@ -33,11 +33,20 @@ class _IntroPageState extends State<IntroPage> {
             padding: const EdgeInsets.all(20.0),
             child: Text(
               "Nous livrons l'épicerie à votre porte",
-              style: GoogleFonts.nerkoOne(),
+              style: GoogleFonts.nerkoOne(
+                fontSize: 34,
+                fontWeight: FontWeight.bold,
+              ),
               textAlign: TextAlign.center,
             ),
           ),
-          const Text('Produits frais tous les jours'),
+          const Text(
+            'Produits frais tous les jours',
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.grey,
+            ),
+          ),
           const Spacer(),
           Container(
             decoration: const BoxDecoration(
