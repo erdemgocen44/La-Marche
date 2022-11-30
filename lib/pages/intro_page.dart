@@ -50,7 +50,9 @@ class _IntroPageState extends State<IntroPage> {
             ),
           ),
           const Spacer(),
-          GestureDetector(
+          GestureDetector(onTap: () {
+            
+          },
             child: Container(
               decoration: const BoxDecoration(
                 color: Colors.deepPurple,
