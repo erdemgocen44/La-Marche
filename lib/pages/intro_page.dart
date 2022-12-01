@@ -55,7 +55,7 @@ class _IntroPageState extends State<IntroPage> {
           GestureDetector(
             onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(
               builder: (context) {
-                return HomePage();
+                return const HomePage();
               },
             )),
             child: Container(
