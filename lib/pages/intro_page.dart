@@ -50,9 +50,12 @@ class _IntroPageState extends State<IntroPage> {
             ),
           ),
           const Spacer(),
-          GestureDetector(onTap: () {
-            
-          },
+          GestureDetector(
+            onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(
+              builder: (context) {
+                return HomePage();
+              },
+            )),
             child: Container(
               decoration: const BoxDecoration(
                 color: Colors.deepPurple,
