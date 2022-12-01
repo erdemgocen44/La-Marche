@@ -48,18 +48,25 @@ class _IntroPageState extends State<IntroPage> {
           Text(
             'Produits frais tous les jours',
             style: TextStyle(
+              fontSize: 16,
               color: Colors.grey[600],
             ),
           ),
           const Spacer(),
+
+          //Commerce le button
           GestureDetector(
-            onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(
-              builder: (context) {
-                return const HomePage();
-              },
-            )),
+            onTap: () => Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return const HomePage();
+                },
+              ),
+            ),
             child: Container(
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
                 color: Colors.deepPurple,
               ),
               child: const Padding(
