@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
 
             const Padding(
               padding: EdgeInsets.symmetric(
-                horizontal: 8.0,
+                horizontal: 24.0,
               ),
               child: Divider(
                 thickness: 4,
@@ -64,6 +64,19 @@ class HomePage extends StatelessWidget {
             ),
 
             //fresh quelquan + grid
+
+            const Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 25,
+              ),
+              child: Text(
+                'Fresh quelquan',
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+            ),
+            Expanded(child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), itemBuilder: (context,index){return GroceryItemTile()}))
           ],
         ),
       ),
