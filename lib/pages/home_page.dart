@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
+
             //bonjour!!
             Padding(
               padding: EdgeInsets.symmetric(
@@ -23,10 +24,17 @@ class HomePage extends StatelessWidget {
                 'Bonjour!',
               ),
             ),
+
             //Commandons des articles frais pour vous
-            Text(
-              'Commandons des articles frais pour vous',
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 25,
+              ),
+              child: Text(
+                'Commandons des articles frais pour vous',
+              ),
             ),
+
             //divider
 
             //fresh quelquan + grid
