@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../components/grocery_item_tile.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -69,7 +71,7 @@ class HomePage extends StatelessWidget {
             //fresh quelquan + grid
 
             Padding(
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 25,
                 ),
                 child: CustomText('Fresh quelquan',
@@ -91,6 +93,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Text CustomText(String ecrit,
       {required TextStyle style, required TextAlign textAlign}) {
     return Text(
@@ -98,6 +101,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  // ignore: non_constant_identifier_names
   SizedBox CustomSized(double ebat) {
     return SizedBox(
       height: ebat,
