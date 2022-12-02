@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                 fontSize: 34,
                 fontWeight: FontWeight.bold,
               ),
-              textAlign: TextAlign.center,,
+              textAlign: TextAlign.center,
               ),
             ),
 
