@@ -45,13 +45,23 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
-
             //divider
 
-            const Divider(),
+            const Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 8.0,
+              ),
+              child: Divider(
+                thickness: 4,
+              ),
+            ),
+
+            const SizedBox(
+              height: 25,
+            ),
 
             //fresh quelquan + grid
           ],
