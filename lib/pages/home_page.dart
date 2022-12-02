@@ -8,11 +8,25 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: const [
+            SizedBox(
+              height: 50,
+            ),
             //bonjour!!
-            Text('Bonjour!'),
-            //Allons-y j'achete un quelqun
-
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 25,
+              ),
+              child: Text(
+                'Bonjour!',
+              ),
+            ),
+            //Commandons des articles frais pour vous
+            Text(
+              'Commandons des articles frais pour vous',
+            ),
             //divider
 
             //fresh quelquan + grid
