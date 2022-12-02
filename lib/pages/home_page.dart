@@ -12,9 +12,7 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(
-              height: 50,
-            ),
+            CustomSized(50),
 
             //bonjour!!
             const Padding(
@@ -87,6 +85,12 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  SizedBox CustomSized(double ebat) {
+    return SizedBox(
+      height: ebat,
     );
   }
 }
