@@ -7,7 +7,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          //bonjour!!
+
+          //Allons-y j'achete un quelqun
+
+          //divider
+
+          //fresh quelquan + grid
+        ],
       ),
     );
   }
