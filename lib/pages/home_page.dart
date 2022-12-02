@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
-          children:  [
+          children: [
             const SizedBox(
               height: 50,
             ),
@@ -25,26 +25,29 @@ class HomePage extends StatelessWidget {
                 'Bonjour!',
               ),
             ),
-           
+
             const SizedBox(
               height: 5,
             ),
 
             //Commandons des articles frais pour vous
             Padding(
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 25,
               ),
               child: Text(
-                'Commandons des articles frais pour vous',style: GoogleFonts.nerkoOne(
-                fontSize: 34,
-                fontWeight: FontWeight.bold,
-              ),
-              textAlign: TextAlign.center,
+                'Commandons des articles frais pour vous',
+                style: GoogleFonts.nerkoOne(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
 
             //divider
+
+            const Divider(),
 
             //fresh quelquan + grid
           ],
