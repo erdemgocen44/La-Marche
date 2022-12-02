@@ -45,6 +45,10 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
+            SizedBox(
+              height: 25,
+            ),
+
             //divider
 
             const Divider(),
