@@ -12,20 +12,20 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomSized(50),
-
-            //bonjour!!
-            const Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 25,
-              ),
-              child: Text(
-                'Bonjour!',
-              ),
+            CustomSized(
+              50,
             ),
 
-            const SizedBox(
-              height: 5,
+            //bonjour!!
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 25,
+              ),
+              child: CustomText('Bonjour!'),
+            ),
+
+            CustomSized(
+              5,
             ),
 
             //Commandons des articles frais pour vous
@@ -43,9 +43,10 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(
-              height: 25,
+            CustomSized(
+              25,
             ),
+
             //divider
 
             const Padding(
@@ -57,8 +58,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(
-              height: 25,
+            CustomSized(
+              25,
             ),
 
             //fresh quelquan + grid
@@ -85,6 +86,12 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Text CustomText(String ecrit) {
+    return Text(
+      ecrit,
     );
   }
 
