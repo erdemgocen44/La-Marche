@@ -6,16 +6,18 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          //bonjour!!
+      body: SafeArea(
+        child: Column(
+          children: const [
+            //bonjour!!
+            Text('Bonjour!'),
+            //Allons-y j'achete un quelqun
 
-          //Allons-y j'achete un quelqun
+            //divider
 
-          //divider
-
-          //fresh quelquan + grid
-        ],
+            //fresh quelquan + grid
+          ],
+        ),
       ),
     );
   }
