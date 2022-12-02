@@ -21,7 +21,11 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(
                 horizontal: 25,
               ),
-              child: CustomText('Bonjour!'),
+              child: CustomText(
+                'Bonjour!',
+                style: const TextStyle(fontSize: 14),
+                textAlign: TextAlign.center,
+              ),
             ),
 
             CustomSized(
@@ -33,7 +37,7 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(
                 horizontal: 25,
               ),
-              child: Text(
+              child: CustomText(
                 'Commandons des articles frais pour vous',
                 style: GoogleFonts.nerkoOne(
                   fontSize: 34,
@@ -64,17 +68,15 @@ class HomePage extends StatelessWidget {
 
             //fresh quelquan + grid
 
-            const Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 25,
-              ),
-              child: Text(
-                'Fresh quelquan',
-                style: TextStyle(
-                  fontSize: 16,
+            Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 25,
                 ),
-              ),
-            ),
+                child: CustomText('Fresh quelquan',
+                    style: const TextStyle(
+                      fontSize: 16,
+                    ),
+                    textAlign: TextAlign.center)),
             Expanded(
                 child: GridView.builder(
                     gridDelegate:
@@ -89,7 +91,8 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Text CustomText(String ecrit) {
+  Text CustomText(String ecrit,
+      {required TextStyle style, required TextAlign textAlign}) {
     return Text(
       ecrit,
     );
