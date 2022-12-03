@@ -82,15 +82,15 @@ class HomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            // Expanded(
-            //   child: GridView.builder(
-            //     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            //         crossAxisCount: 2),
-            //     itemBuilder: (context, index) {
-            //       return GroceryItemTile();
-            //     },
-            //   ),
-            // ),
+            Expanded(
+              child: GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2),
+                itemBuilder: (context, index) {
+                  return GroceryItemTile();
+                },
+              ),
+            ),
           ],
         ),
       ),
