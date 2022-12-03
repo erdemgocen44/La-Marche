@@ -10,4 +10,5 @@ class CartModel extends ChangeNotifier {
     ['Poulet', '14.00', 'assets/images/poulet.png', Colors.brown],
     ['Eau', '0.50', 'assets/images/eau.png', Colors.blueAccent],
   ];
+  get shopItems => _shopItems;
 }
