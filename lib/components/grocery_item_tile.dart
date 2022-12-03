@@ -12,7 +12,7 @@ class GroceryItemTile extends StatelessWidget {
     required this.itemName,
     required this.itemPrice,
     required this.imagePath,
-    this.color,
+    required this.color,
   }) : super(key: key);
 
   @override
