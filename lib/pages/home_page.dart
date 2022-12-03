@@ -71,22 +71,26 @@ class HomePage extends StatelessWidget {
             //fresh quelquan + grid
 
             Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 25,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 25,
+              ),
+              child: CustomText(
+                'Fresh quelquan',
+                style: const TextStyle(
+                  fontSize: 16,
                 ),
-                child: CustomText('Fresh quelquan',
-                    style: const TextStyle(
-                      fontSize: 16,
-                    ),
-                    textAlign: TextAlign.center)),
-            Expanded(
-                child: GridView.builder(
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2),
-                    itemBuilder: (context, index) {
-                      return GroceryItemTile();
-                    }))
+                textAlign: TextAlign.center,
+              ),
+            ),
+            // Expanded(
+            //   child: GridView.builder(
+            //     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            //         crossAxisCount: 2),
+            //     itemBuilder: (context, index) {
+            //       return GroceryItemTile();
+            //     },
+            //   ),
+            // ),
           ],
         ),
       ),
