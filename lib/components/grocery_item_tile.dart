@@ -20,11 +20,13 @@ class GroceryItemTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Container(
+        padding: EdgeInsets.all(12),
         decoration: BoxDecoration(
           color: color[100],
           borderRadius: BorderRadius.circular(20),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             //Photo
             Image.asset(
@@ -37,9 +39,9 @@ class GroceryItemTile extends StatelessWidget {
             //prix + button
             MaterialButton(
               onPressed: () {},
-              color: color,
+              color: color[700],
               child: Text(
-                '\$'+ itemPrice,
+                '\$' + itemPrice,
                 style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
