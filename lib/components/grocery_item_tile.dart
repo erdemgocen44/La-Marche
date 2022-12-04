@@ -22,6 +22,7 @@ class GroceryItemTile extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: color[100],
+          borderRadius: BorderRadius.circular(20),
         ),
         child: Column(
           children: [
@@ -32,8 +33,18 @@ class GroceryItemTile extends StatelessWidget {
             ),
 
             //item prenom
-
+            Text(itemName),
             //prix + button
+            MaterialButton(
+              onPressed: () {},
+              color: color,
+              child: Text(
+                itemPrice,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ],
         ),
       ),
