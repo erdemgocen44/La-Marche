@@ -90,7 +90,9 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(12),
                   itemCount: value.shopItems.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2),
+                    crossAxisCount: 2,
+                    childAspectRatio: 1 / 1.35,
+                  ),
                   itemBuilder: (context, index) {
                     return GroceryItemTile(
                       itemName: value.shopItems[index][0],
