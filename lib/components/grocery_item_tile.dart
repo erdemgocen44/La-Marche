@@ -17,6 +17,20 @@ class GroceryItemTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(children: [
+      
+      //Photo
+        Image.asset(imagePath),
+
+      //item prenom
+
+
+      //prix + button
+      
+
+
+      ],),
+    );
   }
 }
