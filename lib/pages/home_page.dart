@@ -13,7 +13,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.shopping_bag_outlined),
+        child: const Icon(
+          Icons.shopping_bag_outlined,
+        ),
       ),
       body: SafeArea(
         child: Column(
