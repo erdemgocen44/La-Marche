@@ -12,7 +12,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CardPage(),
+          ),
+        ),
+        backgroundColor: Colors.black45,
         child: const Icon(
           Icons.shopping_bag_outlined,
         ),
