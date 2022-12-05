@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => CardPage(),
+            builder: (context) => CartPage(),
           ),
         ),
         backgroundColor: Colors.black45,
