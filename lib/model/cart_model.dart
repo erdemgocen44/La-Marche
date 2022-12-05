@@ -32,12 +32,13 @@ class CartModel extends ChangeNotifier {
     notifyListeners();
 
 //calculatee total price
-    void calculateTotal() {
+    String calculateTotal() {
       double totalPrice = 0;
 
       for (var i = 0; i < _cartItems.length; i++) {
         totalPrice += double.parse(_cartItems[i][1]);
       }
+      return totalPrice.toStringAsFixed(2);
     }
   }
 }
