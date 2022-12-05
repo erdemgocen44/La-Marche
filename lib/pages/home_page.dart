@@ -4,6 +4,7 @@ import 'package:marche/model/cart_model.dart';
 import 'package:provider/provider.dart';
 
 import '../components/grocery_item_tile.dart';
+import 'cart_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
         onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => CartPage(),
+            builder: (context) => const CartPage(),
           ),
         ),
         backgroundColor: Colors.black45,
