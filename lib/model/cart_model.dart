@@ -18,4 +18,11 @@ class CartModel extends ChangeNotifier {
   get cartItems => _cartItems;
 
   get shopItems => _shopItems;
+
+//add item to cart
+
+//remove item from  cart
+
+//calculatee total price
+
 }
