@@ -26,21 +26,21 @@ class HomePage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomSized(
-              50,
+              40,
             ),
 
             //bonjour!!
-            Padding(
-              padding: const EdgeInsets.symmetric(
+            const Padding(
+              padding: EdgeInsets.symmetric(
                 horizontal: 25,
               ),
-              child: CustomText(
+              child: Text(
                 'Bonjour!',
-                style: const TextStyle(fontSize: 14),
+                style: TextStyle(fontSize: 16),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -54,10 +54,10 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(
                 horizontal: 25,
               ),
-              child: CustomText(
+              child: Text(
                 'Commandons des articles frais pour vous',
                 style: GoogleFonts.nerkoOne(
-                  fontSize: 34,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
             ),
 
             CustomSized(
-              25,
+              20,
             ),
 
             //divider
@@ -75,23 +75,23 @@ class HomePage extends StatelessWidget {
                 horizontal: 24.0,
               ),
               child: Divider(
-                thickness: 4,
+                thickness: 2,
               ),
             ),
 
             CustomSized(
-              25,
+              20,
             ),
 
             //fresh quelquan + grid
 
-            Padding(
-              padding: const EdgeInsets.symmetric(
+            const Padding(
+              padding: EdgeInsets.symmetric(
                 horizontal: 25,
               ),
-              child: CustomText(
+              child: Text(
                 'Fresh quelquan',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 16,
                 ),
                 textAlign: TextAlign.center,
@@ -104,7 +104,7 @@ class HomePage extends StatelessWidget {
                   itemCount: value.shopItems.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    childAspectRatio: 1 / 1.35,
+                    childAspectRatio: 1 / 1.30,
                   ),
                   itemBuilder: (context, index) {
                     return GroceryItemTile(
@@ -120,14 +120,6 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  // ignore: non_constant_identifier_names
-  Text CustomText(String ecrit,
-      {required TextStyle style, required TextAlign textAlign}) {
-    return Text(
-      ecrit,
     );
   }
 

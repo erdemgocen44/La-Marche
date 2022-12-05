@@ -7,7 +7,7 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ma Carte'),
+        title: const Text('Ma Carte',),
       ),
     );
   }
