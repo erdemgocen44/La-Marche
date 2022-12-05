@@ -41,7 +41,7 @@ class GroceryItemTile extends StatelessWidget {
             //prix + button
             MaterialButton(
               elevation: 8,
-              onPressed: () {},
+              onPressed: onPressed,
               color: color[700],
               child: Text(
                 '\$' + itemPrice,
