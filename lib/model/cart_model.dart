@@ -42,3 +42,4 @@ class CartModel extends ChangeNotifier {
     }
   }
 }
+ 
