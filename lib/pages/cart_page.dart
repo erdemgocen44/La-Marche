@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:marche/model/cart_model.dart';
+import 'package:provider/provider.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -11,14 +13,21 @@ class CartPage extends StatelessWidget {
           'Ma Carte',
         ),
       ),
-      body: Column(
-        children: [
-          Expanded(child: ListView.builder(itemBuilder: (context, index) {
-            return const ListTile(
-              title: Text('Items'),
-            );
-          }))
-        ],
+      body: Consumer<CartModel>(builder: (context, (context, value, child) {
+        
+      return Column(
+          children: [
+            Expanded(
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return const ListTile(
+                    title: Text('Items'),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
