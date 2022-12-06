@@ -31,8 +31,15 @@ class CartPage extends StatelessWidget {
                           color: Colors.grey[200],
                         ),
                         child: ListTile(
+                          trailing: Icon(
+                            Icons.remove,
+                          ),
+                          subtitle: Text(
+                            '\$' + value.cartItems[index][1],
+                          ),
                           leading: Image.asset(
                             value.cartItems[index][2],
+                            height: 35,
                           ),
                           title: Text(
                             value.cartItems[index][0],
