@@ -22,16 +22,21 @@ class CartPage extends StatelessWidget {
                   itemCount: value.cartItems.length,
                   itemBuilder: (context, index) {
                     return Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(
-                            15,
+                            8,
                           ),
                           color: Colors.grey[200],
                         ),
                         child: ListTile(
-                          title: Text(value.cartItems[index][0]),
+                          leading: Image.asset(
+                            value.cartItems[index][2],
+                          ),
+                          title: Text(
+                            value.cartItems[index][0],
+                          ),
                         ),
                       ),
                     );
