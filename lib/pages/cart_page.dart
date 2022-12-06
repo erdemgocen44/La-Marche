@@ -13,21 +13,23 @@ class CartPage extends StatelessWidget {
           'Ma Carte',
         ),
       ),
-      body: Consumer<CartModel>(builder: (context, (context, value, child) {
-        
-      return Column(
-          children: [
-            Expanded(
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return const ListTile(
-                    title: Text('Items'),
-                  );
-                },
+      body: Consumer<CartModel>(
+        builder: (context, value, child) {
+          return Column(
+            children: [
+              Expanded(
+                child: ListView.builder(
+                  itemCount: value.cartItems.length,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Text(value.cartItems[index][0]),
+                    );
+                  },
+                ),
               ),
-            ),
-          ],
-        ),
+            ],
+          );
+        },
       ),
     );
   }
