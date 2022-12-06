@@ -12,7 +12,13 @@ class CartPage extends StatelessWidget {
         ),
       ),
       body: Column(
-        children: [],
+        children: [
+          Expanded(child: ListView.builder(itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(''),
+            );
+          }))
+        ],
       ),
     );
   }
