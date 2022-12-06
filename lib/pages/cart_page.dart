@@ -14,8 +14,8 @@ class CartPage extends StatelessWidget {
       body: Column(
         children: [
           Expanded(child: ListView.builder(itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(''),
+            return const ListTile(
+              title: Text('Items'),
             );
           }))
         ],
