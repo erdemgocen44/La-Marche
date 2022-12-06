@@ -31,8 +31,13 @@ class CartPage extends StatelessWidget {
                           color: Colors.grey[200],
                         ),
                         child: ListTile(
-                          trailing: Icon(
-                            Icons.remove,
+                          trailing: IconButton(
+                            onPressed: () =>
+                                Provider.of<CartModel>(context, listen: false)
+                                    .removeItemFromCart(index),
+                            icon: Icon(
+                              Icons.cancel,
+                            ),
                           ),
                           subtitle: Text(
                             '\$' + value.cartItems[index][1],
