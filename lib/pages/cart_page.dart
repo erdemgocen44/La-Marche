@@ -35,7 +35,7 @@ class CartPage extends StatelessWidget {
                             onPressed: () =>
                                 Provider.of<CartModel>(context, listen: false)
                                     .removeItemFromCart(index),
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.cancel,
                             ),
                           ),
