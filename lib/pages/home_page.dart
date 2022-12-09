@@ -122,6 +122,10 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
+              decoration: const BoxDecoration(
+                color: Colors.greenAccent,
+              ),
+              padding: EdgeInsets.all(20),
               child: Text(
                 'Total prix',
               ),
