@@ -121,21 +121,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(
-                35.0,
-              ),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.greenAccent,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                padding: EdgeInsets.all(20),
-                child: Text(
-                  'Total prix',
-                ),
-              ),
-            ),
+            
           ],
         ),
       ),

@@ -55,6 +55,34 @@ class CartPage extends StatelessWidget {
                   },
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.all(
+                  35.0,
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.greenAccent,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  padding: EdgeInsets.all(20),
+                  child: Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Total prix',
+                            style: TextStyle(
+                              color: Colors.green[100],
+                            ),
+                          ),
+                          Text('\$' + value.calculateTotal(),style: TextStyle(),),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           );
         },
