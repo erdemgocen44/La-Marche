@@ -121,6 +121,11 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+            Container(
+              child: Text(
+                'Total prix',
+              ),
+            ),
           ],
         ),
       ),
