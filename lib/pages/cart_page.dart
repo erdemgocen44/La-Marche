@@ -76,9 +76,12 @@ class CartPage extends StatelessWidget {
                               color: Colors.green[100],
                             ),
                           ),
+                          SizedBox(
+                            height: 4,
+                          ),
                           Text(
                             '\$' + value.calculateTotal(),
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
