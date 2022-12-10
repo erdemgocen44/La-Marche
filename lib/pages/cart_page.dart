@@ -115,7 +115,7 @@ class CartPage extends StatelessWidget {
                             12,
                           ),
                           border: Border.all(
-                            color: Colors.green.shade100,
+                            color: Colors.green.shade900,
                           ),
                         ),
                         padding: const EdgeInsets.all(12),
