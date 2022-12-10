@@ -76,7 +76,7 @@ class CartPage extends StatelessWidget {
                           const Text(
                             'Total prix',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.red,
                             ),
                           ),
                           const SizedBox(
@@ -86,15 +86,24 @@ class CartPage extends StatelessWidget {
                             '\$${value.calculateTotal()}',
                             style: const TextStyle(
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                         ],
                       ),
                       Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(
+                            12,
+                          ),
+                          border: Border.all(
+                            color: Colors.green.shade100,
+                          ),
+                        ),
+                        padding: EdgeInsets.all(12),
                         child: Row(
-                          children: [
+                          children: const [
                             Text(
                               'Pay Now',
                               style: TextStyle(
@@ -103,6 +112,8 @@ class CartPage extends StatelessWidget {
                             ),
                             Icon(
                               Icons.arrow_forward_ios,
+                              size: 16,
+                              color: Colors.white,
                             ),
                           ],
                         ),
