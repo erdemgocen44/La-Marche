@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:marche/model/cart_model.dart';
 import 'package:provider/provider.dart';
@@ -91,7 +93,19 @@ class CartPage extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        child: Text('Pay Now'),
+                        child: Row(
+                          children: [
+                            Text(
+                              'Pay Now',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
