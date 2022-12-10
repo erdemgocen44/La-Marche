@@ -76,7 +76,7 @@ class CartPage extends StatelessWidget {
                           const Text(
                             'Total prix',
                             style: TextStyle(
-                              color: Colors.red,
+                              color: Colors.white,
                             ),
                           ),
                           const SizedBox(
@@ -101,7 +101,7 @@ class CartPage extends StatelessWidget {
                             color: Colors.green.shade100,
                           ),
                         ),
-                        padding: EdgeInsets.all(12),
+                        padding: const EdgeInsets.all(12),
                         child: Row(
                           children: const [
                             Text(
