@@ -66,14 +66,15 @@ class CartPage extends StatelessWidget {
                   ),
                   padding: EdgeInsets.all(20),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             'Total prix',
                             style: TextStyle(
-                              color: Colors.green[100],
+                              color: Colors.white,
                             ),
                           ),
                           const SizedBox(
