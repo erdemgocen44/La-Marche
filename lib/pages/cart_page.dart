@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:marche/model/cart_model.dart';
 import 'package:provider/provider.dart';
 
@@ -18,7 +19,21 @@ class CartPage extends StatelessWidget {
       body: Consumer<CartModel>(
         builder: (context, value, child) {
           return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 25,
+                ),
+                child: Text(
+                  'My Cart',
+                  style: GoogleFonts.nerkoOne(
+                    fontSize: 33,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
               Expanded(
                 child: ListView.builder(
                   itemCount: value.cartItems.length,
