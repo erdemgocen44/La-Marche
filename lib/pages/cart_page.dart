@@ -76,7 +76,7 @@ class CartPage extends StatelessWidget {
                               color: Colors.green[100],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 4,
                           ),
                           Text(
