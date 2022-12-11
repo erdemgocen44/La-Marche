@@ -41,9 +41,9 @@ class HomePage extends StatelessWidget {
               child: CustomText(
                 size: 16,
                 yazi: 'Bonjour',
+                renk: Colors.black,
                 TextAlign: TextAlign.center,
                 FontWeight: FontWeight.bold,
-                TextStyle: GoogleFonts.config,
               ),
             ),
 
@@ -91,12 +91,11 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.symmetric(
                 horizontal: 25,
               ),
-              child: Text(
-                'Fresh quelquan',
-                style: TextStyle(
-                  fontSize: 16,
-                ),
-                textAlign: TextAlign.center,
+              child: CustomText(
+                yazi: 'Fresh quelquan',
+                size: 16,
+                renk: Colors.black,
+                TextAlign: TextAlign.center,
               ),
             ),
             Expanded(
