@@ -30,8 +30,8 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-             const CustomSizedBox(
-            ebat:  40,
+            const CustomSizedBox(
+              ebat: 40,
             ),
 
             //bonjour!!
@@ -48,8 +48,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            CustomSizedBox(
-             ebat: 5,
+            const CustomSizedBox(
+              ebat: 5,
             ),
 
             //Commandons des articles frais pour vous
@@ -67,8 +67,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            CustomSized(
-              20,
+            const CustomSizedBox(
+              ebat: 20,
             ),
 
             //divider
@@ -82,8 +82,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            CustomSized(
-              20,
+            const CustomSizedBox(
+              ebat: 20,
             ),
 
             //fresh quelquan + grid
@@ -128,4 +128,4 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-
+}
