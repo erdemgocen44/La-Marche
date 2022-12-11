@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:marche/model/cart_model.dart';
 import 'package:provider/provider.dart';
 import '../components/grocery_item_tile.dart';
+import '../model/text_model.dart';
 import 'cart_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -37,10 +38,12 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.symmetric(
                 horizontal: 25,
               ),
-              child: Text(
-                'Bonjour!',
-                style: TextStyle(fontSize: 16),
-                textAlign: TextAlign.center,
+              child: CustomText(
+                size: 16,
+                yazi: 'Bonjour',
+                TextAlign: TextAlign.center,
+                FontWeight: FontWeight.bold,
+                TextStyle: GoogleFonts.config,
               ),
             ),
 
@@ -120,7 +123,6 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            
           ],
         ),
       ),
