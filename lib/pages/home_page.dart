@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:marche/model/cart_model.dart';
 import 'package:provider/provider.dart';
 import '../components/grocery_item_tile.dart';
+import '../model/sizedbox_model.dart';
 import '../model/text_model.dart';
 import 'cart_page.dart';
 
@@ -29,8 +30,8 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomSized(
-              40,
+             const CustomSizedBox(
+            ebat:  40,
             ),
 
             //bonjour!!
@@ -47,8 +48,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            CustomSized(
-              5,
+            CustomSizedBox(
+             ebat: 5,
             ),
 
             //Commandons des articles frais pour vous
@@ -128,10 +129,3 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // ignore: non_constant_identifier_names
-  SizedBox CustomSized(double ebat) {
-    return SizedBox(
-      height: ebat,
-    );
-  }
-}
