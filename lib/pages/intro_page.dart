@@ -44,7 +44,7 @@ class _IntroPageState extends State<IntroPage> {
               textAlign: TextAlign.center,
             ),
           ),
-          CustomSizedBox(ebat: 24),
+          const CustomSizedBox(ebat: 24),
           const CustomText(
             yazi: 'Produits frais tous les jours',
             size: 16,
@@ -69,14 +69,12 @@ class _IntroPageState extends State<IntroPage> {
               ),
               child: const Padding(
                 padding: EdgeInsets.all(25),
-                child: Text(
-                  'Commencer!!',
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
+                child: CustomText(
+                  yazi: 'Commencer!!',
+                  size: 15,
+                  renk: Colors.white,
+                  FontWeight: FontWeight.bold,
+                  TextAlign: TextAlign.center,
                 ),
               ),
             ),
