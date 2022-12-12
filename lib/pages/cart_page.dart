@@ -120,12 +120,8 @@ class CartPage extends StatelessWidget {
                         padding: const EdgeInsets.all(12),
                         child: Row(
                           children: const [
-                            Text(
-                              'Pay Now',
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
+                            CustomText(
+                                yazi: 'Pay Now', size: 12, renk: Colors.white,),
                             Icon(
                               Icons.arrow_forward_ios,
                               size: 16,
