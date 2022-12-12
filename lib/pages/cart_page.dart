@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:marche/model/cart_model.dart';
+import 'package:marche/model/sizedbox_model.dart';
+import 'package:marche/model/text_model.dart';
 import 'package:provider/provider.dart';
 
 class CartPage extends StatelessWidget {
@@ -27,8 +29,7 @@ class CartPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                   horizontal: 25,
                 ),
-                child: 
-                Text(
+                child: Text(
                   'My Cart',
                   style: GoogleFonts.nerkoOne(
                     fontSize: 33,
@@ -91,15 +92,12 @@ class CartPage extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'Total prix',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
+                          const CustomText(
+                            yazi: 'Total prix',
+                            size: 12,
+                            renk: Colors.white,
                           ),
-                          const SizedBox(
-                            height: 4,
-                          ),
+                         CustomSizedBox(ebat: 4),
                           Text(
                             '\$${value.calculateTotal()}',
                             style: const TextStyle(
