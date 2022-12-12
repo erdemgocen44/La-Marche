@@ -14,7 +14,7 @@ class CartPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
         ),
       ),
@@ -27,7 +27,8 @@ class CartPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                   horizontal: 25,
                 ),
-                child: Text(
+                child: 
+                Text(
                   'My Cart',
                   style: GoogleFonts.nerkoOne(
                     fontSize: 33,
