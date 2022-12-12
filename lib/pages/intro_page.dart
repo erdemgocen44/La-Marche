@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:marche/model/text_model.dart';
 
 import 'home_page.dart';
 
@@ -45,12 +46,10 @@ class _IntroPageState extends State<IntroPage> {
           const SizedBox(
             height: 24,
           ),
-          Text(
-            'Produits frais tous les jours',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.grey[600],
-            ),
+          const CustomText(
+            yazi: 'Produits frais tous les jours',
+            size: 16,
+            renk: Colors.grey,
           ),
           const Spacer(),
 
