@@ -77,7 +77,7 @@ class CartPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(
+                padding: const EdgeInsets.all(
                   35.0,
                 ),
                 child: Container(
@@ -97,7 +97,7 @@ class CartPage extends StatelessWidget {
                             size: 12,
                             renk: Colors.white,
                           ),
-                         CustomSizedBox(ebat: 4),
+                          const CustomSizedBox(ebat: 4),
                           Text(
                             '\$${value.calculateTotal()}',
                             style: const TextStyle(
